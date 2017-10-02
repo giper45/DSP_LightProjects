@@ -24,19 +24,17 @@ services:
         ipv4_address: 192.168.2.2
     cap_add:
       - NET_ADMIN
-  kali:
-    image: 'dockersecplayground/kali:latest'
+  ssh_machine:
+    image: 'dockersecplayground/alpine_ssh_password:latest'
     stdin_open: true
     tty: true
     ports:
-      - '11000:4200'
+      - '2200:22'
     networks:
       external_network:
         ipv4_address: 192.168.2.3
-    volumes:
-      - './history:/history'
     cap_add:
-      - ALL
+      - NET_ADMIN
 networks:
   internal_network:
     ipam:

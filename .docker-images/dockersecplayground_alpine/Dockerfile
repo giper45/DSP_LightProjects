@@ -16,6 +16,15 @@ LABEL \
       actions.exec.args.command.val="mkdir hello" \
       actions.exec.args.command.type="text" \
 
+      actions.sed.command="/sed.sh " \ 
+      actions.sed.description="Replace a string with another inside a file" \ 
+      actions.sed.args.filename.val="" \
+      actions.sed.args.filename.type="text" \
+      actions.sed.args.string_one.val="" \
+      actions.sed.args.string_one.type="text" \
+      actions.sed.args.string_two.val="" \
+      actions.sed.args.string_two.type="text" \
+
       actions.adduser.command="/adduser.sh" \ 
       actions.adduser.description="Add a new username : <name> <password> " \ 
       actions.adduser.args.name.val="user" \
