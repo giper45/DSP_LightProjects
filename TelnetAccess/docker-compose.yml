@@ -29,19 +29,6 @@ services:
         ipv4_address: 192.168.2.4
     cap_add:
       - NET_ADMIN
-  Kali:
-    image: 'dockersecplayground/kali:latest'
-    stdin_open: true
-    tty: true
-    ports:
-      - '10000:4200'
-    networks:
-      internal_network:
-        ipv4_address: 192.168.2.3
-    volumes:
-      - './dump_sniff:/dump_sniff'
-    cap_add:
-      - ALL
 networks:
   telnet_network:
     ipam:
