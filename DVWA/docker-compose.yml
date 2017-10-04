@@ -6,8 +6,6 @@ services:
     tty: true
     ports:
       - '11110:80'
-    volumes:
-      - './website:/var/www/example.com/public_html/DVWA'
     cap_add:
       - NET_ADMIN
 networks: {}
