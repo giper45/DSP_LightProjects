@@ -29,6 +29,17 @@ services:
         ipv4_address: 193.20.2.4
     cap_add:
       - NET_ADMIN
+  entry_point:
+    image: 'dockersecplayground/alpine_pentest:latest'
+    stdin_open: true
+    tty: true
+    ports:
+      - '22000:22'
+    networks:
+      internal_subnet:
+        ipv4_address: 193.20.2.3
+    cap_add:
+      - ALL
 networks:
   telnet_subnet:
     ipam:
