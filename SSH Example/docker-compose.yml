@@ -8,14 +8,6 @@ services:
       - '13000:22'
     cap_add:
       - NET_ADMIN
-  EntryPoint:
-    image: 'dockersecplayground/kali:latest'
-    stdin_open: true
-    tty: true
-    ports:
-      - '10000:4200'
-    cap_add:
-      - ALL
   SSH_SERVER_KEYS:
     image: 'dockersecplayground/ssh_keys:latest'
     stdin_open: true
