@@ -23,3 +23,5 @@ update_image dockersecplayground_alpine_telnet dockersecplayground/alpine_telnet
 update_image dockersecplayground_alpine_test dockersecplayground/alpine_test:latest
 update_image dockersecplayground_alpine_ssh_password dockersecplayground/alpine_ssh_password:latest
 update_image dockersecplayground_linode_lamp dockersecplayground/linode_lamp:latest
+
+pull_image vimagick/webgoat:latest
