@@ -25,3 +25,4 @@ update_image dockersecplayground_ssh_keys dockersecplayground/alpine_ssh_keys:la
 update_image dockersecplayground_linode_lamp dockersecplayground/linode_lamp:latest
 
 pull_image vimagick/webgoat:latest
+pull_image bkimminich/juice-shop:latest
